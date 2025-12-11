@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị - Báo 247</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/admin.css">
+</head>
+<body>
+
+    <h1>DASHBOARD QUẢN TRỊ</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>✍️ Đăng bài mới</h2>
+            
+            <label>Tiêu đề:</label>
+            <input type="text" id="title" placeholder="Nhập tiêu đề...">
+            
+            <label>Tóm tắt:</label>
+            <textarea id="summary" rows="3" placeholder="Tóm tắt ngắn..."></textarea>
+            
+            <label>Chuyên mục:</label>
+            <select id="category">
+                <option value="thoisu">Thời sự</option>
+                <option value="thegioi">Thế giới</option>
+                <option value="kinhdoanh">Kinh doanh</option>
+                <option value="congnghe">Công nghệ</option>
+                <option value="thethao">Thể thao</option>
+                <option value="giaitri">Giải trí</option>
+                <option value="suckhoe">Sức khỏe</option>
+                <option value="giaoduc">Giáo dục</option>
+                <option value="dulich">Du lịch</option>
+                <option value="gocnhin">Góc nhìn</option>  
+                <option value="thugian">Thư giãn</option>
+            </select>
+
+            <label>Link ảnh (URL):</label>
+            <input type="text" id="imageUrl" placeholder="https://...">
+            
+            <label>Nội dung chi tiết (HTML):</label>
+            <textarea id="content" rows="12" placeholder="Nội dung bài viết..."></textarea>
+            
+            <button class="btn-post" onclick="dangBai()">ĐĂNG BÀI NGAY</button>
+        </div>
+
+        <div class="box">
+            <h2 style="border-color:#007bff; color:#007bff;">📰 Quản lý Bài viết</h2>
+            <div id="article-list">Đang tải...</div>
+        </div>
+
+        <div class="box">
+            <h2 style="border-color:#dc3545; color:#dc3545;">👥 Quản lý Tài khoản</h2>
+            <div id="user-list">Đang tải...</div>
+        </div>
+    </div>
+
+    <script src="script/admin.js"></script>
+
+</body>
+</html>

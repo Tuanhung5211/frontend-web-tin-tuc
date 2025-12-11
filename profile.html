@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân - Báo 247</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/homePage_style.css">
+</head>
+<body>
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <h3>Tất cả chuyên mục</h3>
+            <div class="close-sidebar" onclick="toggleSidebar()">×</div>
+        </div>
+        <div class="sidebar-content">
+            <a href="homePage.html" class="sidebar-main-link" style="border-bottom: 1px dashed #eee; padding-bottom: 15px; color: #e60000;">MỚI NHẤT</a>
+            
+            <div class="sidebar-group">
+                <a href="category.html?cat=thoisu" class="sidebar-main-link">Thời sự</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Chính trị</a>
+                    <a href="#">Dân sinh</a>
+                    <a href="#">Lao động - Việc làm</a>
+                    <a href="#">Giao thông</a>
+                    <a href="#">Mê Kông</a>
+                    <a href="#">Quỹ Hy vọng</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=thegioi" class="sidebar-main-link">Thế giới</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Tư liệu</a>
+                    <a href="#">Phân tích</a>
+                    <a href="#">Người Việt 5 châu</a>
+                    <a href="#">Cuộc sống đó đây</a>
+                    <a href="#">Quân sự</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=kinhdoanh" class="sidebar-main-link">Kinh doanh</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Quốc tế</a>
+                    <a href="#">Doanh nghiệp</a>
+                    <a href="#">Chứng khoán</a>
+                    <a href="#">Bất động sản</a>
+                    <a href="#">E-commerce</a>
+                    <a href="#">Tài chính - Ngân hàng</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=congnghe" class="sidebar-main-link">Khoa học & Công nghệ</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Khoa học trong nước</a>
+                    <a href="#">Tin tức công nghệ</a>
+                    <a href="#">Sản phẩm mới</a>
+                    <a href="#">AI - Trí tuệ nhân tạo</a>
+                    <a href="#">Startup</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=thethao" class="sidebar-main-link">Thể thao</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Bóng đá Việt Nam</a>
+                    <a href="#">Bóng đá Quốc tế</a>
+                    <a href="#">Lịch thi đấu</a>
+                    <a href="#">Tennis</a>
+                    <a href="#">Marathon</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=giaitri" class="sidebar-main-link">Giải trí</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Giới sao</a>
+                    <a href="#">Phim ảnh</a>
+                    <a href="#">Âm nhạc</a>
+                    <a href="#">Thời trang</a>
+                    <a href="#">Video giải trí</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=suckhoe" class="sidebar-main-link">Sức khỏe</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Tin tức</a>
+                    <a href="#">Tư vấn</a>
+                    <a href="#">Dinh dưỡng</a>
+                    <a href="#">Khỏe đẹp</a>
+                    <a href="#">Các bệnh thường gặp</a>
+                    <a href="#">Vaccine</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=giaoduc" class="sidebar-main-link">Giáo dục</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Tin tức</a>
+                    <a href="#">Tuyển sinh</a>
+                    <a href="#">Du học</a>
+                    <a href="#">Học tiếng Anh</a>
+                    <a href="#">Giáo dục 4.0</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=dulich" class="sidebar-main-link">Du lịch</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Điểm đến</a>
+                    <a href="#">Ẩm thực</a>
+                    <a href="#">Dấu chân</a>
+                    <a href="#">Tư vấn</a>
+                    <a href="#">Ảnh đẹp</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=gocnhin" class="sidebar-main-link">Góc nhìn</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Bình luận nhiều</a>
+                    <a href="#">Chính trị & Chính sách</a>
+                    <a href="#">Y tế & Sức khỏe</a>
+                    <a href="#">Kinh doanh & Quản trị</a>
+                    <a href="#">Giáo dục & Tri thức</a>
+                </div>
+            </div>
+
+            <div class="sidebar-group">
+                <a href="category.html?cat=thugian" class="sidebar-main-link">Thư giãn</a>
+                <div class="sidebar-sub-links">
+                    <a href="#">Cười</a>
+                    <a href="#">Đố vui</a>
+                    <a href="#">Chuyện lạ</a>
+                    <a href="#">Trắc nghiệm</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="modal-overlay" id="loginModal">
+        <div class="login-box">
+            <div class="close-btn" onclick="closeLogin()" style="float:right; cursor:pointer; font-size:24px;">×</div>
+            <div class="auth-tabs" style="display:flex; margin-bottom:20px; border-bottom:1px solid #ddd;">
+                <div class="auth-tab active" id="tab-login" onclick="switchTab('login')" style="flex:1; text-align:center; padding:10px; cursor:pointer; font-weight:bold; border-bottom:2px solid #e60000; color:#e60000;">Đăng nhập</div>
+                <div class="auth-tab" id="tab-register" onclick="switchTab('register')" style="flex:1; text-align:center; padding:10px; cursor:pointer; color:#666;">Đăng ký</div>
+            </div>
+            <form id="form-login">
+                <h3 style="margin-bottom:15px; text-align:center;">Chào mừng trở lại!</h3>
+                <div class="form-group"><input type="text" id="login-input" class="form-input" placeholder="Email hoặc tên đăng nhập" required></div>
+                <div class="form-group"><input type="password" id="login-pass" class="form-input" placeholder="Mật khẩu" required></div>
+                <button type="button" class="btn-login" onclick="handleLogin()">ĐĂNG NHẬP</button>
+            </form>
+            <form id="form-register" style="display:none;">
+                <h3 style="margin-bottom:15px; text-align:center;">Tạo tài khoản mới</h3>
+                <div class="form-group"><input type="text" id="reg-username" class="form-input" placeholder="Tên đăng nhập" required></div>
+                <div class="form-group"><input type="email" id="reg-email" class="form-input" placeholder="Email" required></div>
+                <div class="form-group"><input type="password" id="reg-pass" class="form-input" placeholder="Mật khẩu" required></div>
+                <button type="button" class="btn-login" onclick="handleRegister()" style="background:#04284d;">ĐĂNG KÝ</button>
+            </form>
+            <div id="auth-message" style="margin-top:15px; text-align:center; color:red; font-size:13px;"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-left flex-center gap-15">
+                    <div style="text-align:left;">
+                        <a href="homePage.html" class="logo-img">BÁO<span class="logo-highlight">247</span></a>
+                        <div style="font-size:11px; color:#aaa; margin-top:4px; letter-spacing: 0.5px;">Tin tức cập nhật từng giây</div>
+                    </div>
+                    <div class="header-info">
+                        <span>TP HCM <svg class="icon" viewBox="0 0 24 24" style="fill:#ccc;width:10px;"><path d="M7 10l5 5 5-5z"/></svg></span>
+                        <span style="display:flex; align-items:center; gap:5px;"><svg class="icon" viewBox="0 0 24 24" style="fill:#ccc"><path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z"/></svg> 23°</span>
+                        <span style="color:#444">|</span>
+                        <span id="date-now">Thứ ba, 9/12/2025</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="text-gray">Mới nhất</a> <span style="color:#444">|</span>
+                    <a href="#" class="text-gray">Tin theo khu vực</a> <span style="color:#444">|</span>
+                    <a href="#" style="border:1px solid #444; padding:2px 6px; border-radius:3px;">International</a>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm">
+                        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                    <a href="javascript:void(0)" class="btn-open-login" onclick="openLogin()">Đăng nhập</a>
+                </div>
+            </div>
+            
+            <div class="nav-wrapper">
+                <div class="container">
+                    <div class="nav-container">
+                        <div class="nav-scroll-content">
+    <a href="homePage.html" class="nav-link highlight">MỚI NHẤT</a>
+
+    <div class="nav-group">
+        <a href="category.html?cat=thoisu" class="nav-link">Thời sự</a>
+        <div class="sub-menu-stack">
+            <a href="#">Chính trị</a>
+            <a href="#">Dân sinh</a>
+            <a href="#">Lao động - Việc làm</a>
+            <a href="#">Giao thông</a>
+            <a href="#">Mê Kông</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=thegioi" class="nav-link">Thế giới</a>
+        <div class="sub-menu-stack">
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+            <a href="#">Quân sự</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=kinhdoanh" class="nav-link">Kinh doanh</a>
+        <div class="sub-menu-stack">
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+            <a href="#">Chứng khoán</a>
+            <a href="#">Bất động sản</a>
+            <a href="#">E-commerce</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=congnghe" class="nav-link">Công nghệ</a>
+        <div class="sub-menu-stack">
+            <a href="#">Khoa học</a>
+            <a href="#">Số hóa</a>
+            <a href="#">AI</a>
+            <a href="#">Startup</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=thethao" class="nav-link">Thể thao</a>
+        <div class="sub-menu-stack">
+            <a href="#">Bóng đá VN</a>
+            <a href="#">Bóng đá Quốc tế</a>
+            <a href="#">Tennis</a>
+            <a href="#">Marathon</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=giaitri" class="nav-link">Giải trí</a>
+        <div class="sub-menu-stack">
+            <a href="#">Giới sao</a>
+            <a href="#">Phim ảnh</a>
+            <a href="#">Âm nhạc</a>
+            <a href="#">Thời trang</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=suckhoe" class="nav-link">Sức khoẻ</a>
+        <div class="sub-menu-stack">
+            <a href="#">Tin tức</a>
+            <a href="#">Dinh dưỡng</a>
+            <a href="#">Khỏe đẹp</a>
+            <a href="#">Tư vấn</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=giaoduc" class="nav-link">Giáo dục</a>
+        <div class="sub-menu-stack">
+            <a href="#">Tuyển sinh</a>
+            <a href="#">Du học</a>
+            <a href="#">Học tiếng Anh</a>
+        </div>
+    </div>
+
+    <div class="nav-group">
+        <a href="category.html?cat=dulich" class="nav-link">Du lịch</a>
+        <div class="sub-menu-stack">
+            <a href="#">Điểm đến</a>
+            <a href="#">Ẩm thực</a>
+            <a href="#">Tư vấn</a>
+        </div>
+    </div>
+
+    <div class="nav-group"><a href="category.html?cat=gocnhin" class="nav-link">Góc nhìn</a></div>
+    <div class="nav-group"><a href="category.html?cat=thugian" class="nav-link">Thư giãn</a></div>
+</div>
+                        <div class="burger-btn" onclick="toggleSidebar()">
+                            <svg width="24" height="24" fill="#ccc" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-container" style="margin-top: 40px; margin-bottom: 60px;">
+            <div class="profile-header">
+                <h2>Hồ sơ cá nhân</h2>
+                <p>Quản lý thông tin bảo mật và cài đặt tài khoản của bạn</p>
+            </div>
+
+            <div class="profile-list">
+                <div class="profile-item" style="flex-direction: column; align-items: center; border-bottom: 2px dashed #eee;">
+                    <div style="position: relative; width: 100px; height: 100px; margin-bottom: 10px;">
+                        <img id="p-avatar" src="https://placehold.co/100x100?text=Avatar" 
+                             style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid #e60000;">
+                    </div>
+                    <button class="btn-change" onclick="triggerUpload()">Tải ảnh từ máy tính</button>
+                    <input type="file" id="file-input" style="display: none;" accept="image/*" onchange="uploadAvatar(this)">
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Tên đăng nhập</span>
+                        <span class="p-value" id="p-username" style="font-weight:bold;">...</span>
+                    </div>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Email</span>
+                        <span class="p-value" id="p-email">...</span>
+                    </div>
+                    <button class="btn-change" onclick="editField('email', 'Email', 'email')">Thay đổi</button>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Ngày sinh</span>
+                        <span class="p-value" id="p-dob">Chưa có thông tin</span>
+                    </div>
+                    <button class="btn-change" onclick="editField('dob', 'Ngày sinh', 'date')">Thay đổi</button>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Giới tính</span>
+                        <span class="p-value" id="p-gender">Chưa có thông tin</span>
+                    </div>
+                    <button class="btn-change" onclick="editGender()">Thay đổi</button>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Số điện thoại</span>
+                        <span class="p-value" id="p-phone">Chưa có thông tin</span>
+                    </div>
+                    <button class="btn-change" onclick="editField('phone', 'Số điện thoại', 'tel')">Thay đổi</button>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Địa chỉ</span>
+                        <span class="p-value" id="p-address">Chưa có thông tin</span>
+                    </div>
+                    <button class="btn-change" onclick="editField('address', 'Địa chỉ', 'text')">Thay đổi</button>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-info">
+                        <span class="p-label">Cấp bậc</span>
+                        <span class="p-value" id="p-level" style="color:#e60000; font-weight:bold;">Thành viên mới</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="danger-zone">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div><h4>Xóa tài khoản</h4><p style="font-size:13px; color:#666; margin:0;">Hành động này không thể hoàn tác.</p></div>
+                    <button class="btn-delete-acc" onclick="deleteAccount()">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="homePage.html" class="logo-img" style="font-size: 24px; display:block; margin-bottom:15px; color:var(--text-main);">
+                        BÁO<span class="logo-highlight">247</span>
+                    </a>
+                    <div class="footer-link-list">
+                        <a href="homePage.html">Trang chủ</a>
+                        <a href="category.html?cat=thoisu">Thời sự</a>
+                        <a href="category.html?cat=thegioi">Thế giới</a>
+                        <a href="category.html?cat=kinhdoanh">Kinh doanh</a>
+                        <a href="category.html?cat=gocnhin">Góc nhìn</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Chuyên mục</h4>
+                    <div class="footer-link-list">
+                        <a href="category.html?cat=congnghe">Khoa học & Công nghệ</a>
+                        <a href="category.html?cat=thethao">Thể thao</a>
+                        <a href="category.html?cat=giaitri">Giải trí</a>
+                        <a href="category.html?cat=suckhoe">Sức khỏe</a>
+                        <a href="category.html?cat=giaoduc">Giáo dục</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Thông tin & Tiện ích</h4>
+                    <div class="footer-link-list">
+                        <a href="category.html?cat=dulich">Du lịch</a>
+                        <a href="category.html?cat=thugian">Thư giãn</a>
+                        <a href="#">Rao vặt</a>
+                        <a href="#">Startup</a>
+                        <a href="#">Ảnh & Video</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Tải ứng dụng</h4>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">Android</a>
+                        <a href="#" class="app-btn">App Store</a>
+                    </div>
+                    <h4>Liên kết</h4>
+                    <div style="display:flex; gap:15px; color:#757575;">
+                        <a href="#">Facebook</a> <a href="#">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="license-info">
+                    <p><strong>Báo điện tử 247</strong></p>
+                    <p>Cơ quan chủ quản: Bộ Thông tin và Truyền thông</p>
+                    <p>Giấy phép số: 08/GP-BTTTT cấp ngày 09/12/2025</p>
+                    <p>Tổng biên tập: <strong>Nguyễn Văn A</strong></p>
+                    <p style="margin-top:10px; font-size:12px; color:#999;">© 1997-2025. Toàn bộ bản quyền thuộc về Báo 247.</p>
+                </div>
+                <div class="contact-info">
+                    <p>Quảng cáo: <strong>0909.xxx.xxx</strong></p>
+                    <p>Email: <a href="mailto:ads@bao247.vn">ads@bao247.vn</a></p>
+                    <div style="margin-top: 15px;">
+                        <span style="display:block; font-size:12px;">Hotline 24/7</span>
+                        <a href="tel:0909123456" class="contact-hotline">0909.123.456</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/auth.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebarMenu = document.getElementById("sidebarMenu");
+            const sidebarOverlay = document.getElementById("sidebarOverlay");
+            if (sidebarMenu && sidebarOverlay) {
+                sidebarMenu.classList.toggle("active");
+                sidebarOverlay.classList.toggle("active");
+            }
+        }
+
+        const API_URL_PROFILE = 'https://thietkeweb-8kq5.onrender.com/api';
+        let currentUserId = null;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const userJson = localStorage.getItem('currentUser');
+            if (!userJson) {
+                alert("Bạn chưa đăng nhập!");
+                window.location.href = 'homePage.html';
+                return;
+            }
+            const user = JSON.parse(userJson);
+            currentUserId = user.id;
+            document.getElementById('p-username').innerText = user.username;
+            await loadProfileData();
+        });
+
+        // (Giữ nguyên các hàm JS xử lý profile cũ của bạn ở dưới đây...)
+        async function loadProfileData() {
+            try {
+                const res = await fetch(`${API_URL_PROFILE}/user/${currentUserId}`);
+                const data = await res.json();
+                const avatarEl = document.getElementById('p-avatar');
+                if (data.avatar_url && data.avatar_url !== 'null' && data.avatar_url !== '') {
+                    avatarEl.src = data.avatar_url;
+                }
+                document.getElementById('p-email').innerText = data.email;
+                updateUI('p-dob', data.dob);
+                updateUI('p-gender', data.gender);
+                updateUI('p-phone', data.phone);
+                updateUI('p-address', data.address);
+                document.getElementById('p-level').innerText = data.user_level || 'Thành viên mới';
+            } catch (e) { console.error(e); }
+        }
+
+        function updateUI(elementId, value) {
+            const el = document.getElementById(elementId);
+            if (value && value !== 'null') {
+                el.innerText = value;
+                el.classList.remove('empty');
+            } else {
+                el.innerText = 'Chưa có thông tin';
+                el.classList.add('empty');
+            }
+        }
+
+        function triggerUpload() { document.getElementById('file-input').click(); }
+
+        async function uploadAvatar(input) {
+            const file = input.files[0];
+            if (!file) return;
+            const formData = new FormData();
+            formData.append('avatar', file);
+            try {
+                showMessage("⏳ Đang tải ảnh lên...");
+                const res = await fetch(`${API_URL_PROFILE}/upload-avatar`, { method: 'POST', body: formData });
+                const data = await res.json();
+                if (res.ok) {
+                    await sendUpdate('avatar_url', data.url);
+                    document.getElementById('p-avatar').src = data.url;
+                    showMessage("✅ Đổi ảnh thành công!");
+                } else { showMessage("Lỗi upload: " + data.message); }
+            } catch (e) { console.error(e); showMessage("Lỗi kết nối server!"); }
+        }
+
+        async function editField(field, label, type) {
+            const currentVal = document.getElementById('p-' + field).innerText;
+            const valToShow = currentVal === 'Chưa có thông tin' ? '' : currentVal;
+            const newValue = await showCustomPrompt(`Nhập ${label} mới:`, type, valToShow);
+            if (newValue !== null) await sendUpdate(field, newValue);
+        }
+
+        async function editGender() {
+            const newValue = await showCustomPrompt("Nhập giới tính (Nam/Nữ):", "text");
+            if (newValue !== null) await sendUpdate('gender', newValue);
+        }
+
+        async function sendUpdate(field, value) {
+            try {
+                const res = await fetch(`${API_URL_PROFILE}/user/update`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: currentUserId, field: field, value: value })
+                });
+                if (res.ok) {
+                    showMessage("✅ Cập nhật thành công!");
+                    if(field !== 'avatar_url') loadProfileData(); 
+                } else {
+                    const errData = await res.json();
+                    showMessage("❌ " + errData.message);
+                }
+            } catch (e) { showMessage("Lỗi kết nối server"); }
+        }
+
+        async function deleteAccount() {
+            if (confirm("CẢNH BÁO: Xóa tài khoản vĩnh viễn?")) {
+                try {
+                    const res = await fetch(`${API_URL_PROFILE}/user/delete/${currentUserId}`, { method: 'DELETE' });
+                    if (res.ok) {
+                        alert("Tài khoản đã xóa!");
+                        localStorage.removeItem('currentUser');
+                        window.location.href = 'homePage.html';
+                    }
+                } catch (e) { alert("Lỗi xóa"); }
+            }
+        }
+    </script>
+</body>
+</html>

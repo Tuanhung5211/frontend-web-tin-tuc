@@ -448,19 +448,3 @@ footer .logo-img { color: #ffffff !important; }
     .profile-list { padding: 0 15px; }
     
 }
-/* --- CSS MỚI: Hỗ trợ click mở menu sidebar --- */
-.sidebar-group.active .sidebar-sub-links {
-    display: flex !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    animation: simpleFadeIn 0.3s ease-out;
-}
-
-/* Đổi màu mục chính khi đang mở */
-.sidebar-group.active .sidebar-main-link {
-    background-color: #1f1f1f;
-    border-left: 4px solid #e60000;
-    padding-left: 30px;
-    color: #fff;
-
-}
